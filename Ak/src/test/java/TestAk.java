@@ -22,9 +22,7 @@ public class TestAk {
         diamante.velocidadDisparo = 13;
         diamante.danio = 15;
         
-        System.out.println(diamante.mostrarCaracteristicas());
-         
-        
+        System.out.println(diamante.mostrarCaracteristicas());  
     }
     
 }
