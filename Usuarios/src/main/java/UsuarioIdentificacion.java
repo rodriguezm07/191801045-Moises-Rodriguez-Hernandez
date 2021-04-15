@@ -1,25 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author rodri
- */
 public class UsuarioIdentificacion {
-    private String  curp,rfc,nombre,oficio,edad;
+    private String  curp,rfc,usuarioDomicilio;
+    private int edad,id;
+    
 
     public UsuarioIdentificacion() {
     }
 
-    public UsuarioIdentificacion(String curp, String rfc, String nombre, String oficio, String edad) {
+    public UsuarioIdentificacion(String curp, String rfc, String usuarioDomicilio, int edad, int id) {
         this.curp = curp;
         this.rfc = rfc;
-        this.nombre = nombre;
-        this.oficio = oficio;
+        this.usuarioDomicilio = usuarioDomicilio;
         this.edad = edad;
+        this.id = id;
     }
 
     public String getCurp() {
@@ -38,35 +31,37 @@ public class UsuarioIdentificacion {
         this.rfc = rfc;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getUsuarioDomicilio() {
+        return usuarioDomicilio;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setUsuarioDomicilio(String usuarioDomicilio) {
+        this.usuarioDomicilio = usuarioDomicilio;
     }
 
-    public String getOficio() {
-        return oficio;
-    }
-
-    public void setOficio(String oficio) {
-        this.oficio = oficio;
-    }
-
-    public String getEdad() {
+    public int getEdad() {
         return edad;
     }
 
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
-    
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     @Override
     public String toString() {
-        return "UsuarioIdentificacion{" + "curp=" + curp + ", rfc=" + rfc + ", nombre=" + nombre + ", oficio=" + oficio + ", edad=" + edad + '}';
+        return "UsuarioIdentificacion{" + "curp=" + curp + ", rfc=" + rfc + ", usuarioDomicilio=" + usuarioDomicilio + ", edad=" + edad + ", id=" + id + '}';
     }
+    
+    
+
     
     
     

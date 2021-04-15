@@ -1,8 +1,11 @@
+package Usuarios;
+
 
 public class Usuario {
 
     private String nombreUsuario,contraseña,fechaAlta;
     private int id,status; 
+    
 
     public Usuario() {
     }
@@ -15,6 +18,24 @@ public class Usuario {
         this.status = status;
     }
 
+    public Usuario(String nombreUsuario, String contraseña, int status) {
+        this.nombreUsuario = nombreUsuario;
+        this.contraseña = contraseña;
+        this.status = status;
+    }
+
+    public Usuario(int id) {
+        this.id = id;
+    }
+
+    public Usuario(String nombreUsuario, String contraseña, int id, int status) {
+        this.nombreUsuario = nombreUsuario;
+        this.contraseña = contraseña;
+        this.id = id;
+        this.status = status;
+    }
+
+    
     public String getNombreUsuario() {
         return nombreUsuario;
     }
@@ -57,9 +78,12 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" + "nombreUsuario=" + nombreUsuario + ", contrase\u00f1a=" + contraseña + ", fechaAlta=" + fechaAlta + ", id=" + id + ", status=" + status + '}';
+        return nombreUsuario;
     }
     
+    public String usuarios() {
+        return "Nombre de Usuario: " + nombreUsuario + " \t Contraseña: " + contraseña + "\t Fecha de Alta: " + fechaAlta + "\t Id: " + id + "\t Status: " + status;
+    }
     
     
 }
