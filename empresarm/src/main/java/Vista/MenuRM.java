@@ -108,6 +108,7 @@ public class MenuRM extends javax.swing.JFrame {
         IndexProductos verProductos = new IndexProductos();
         escritorio.add(verProductos);
         verProductos.show();
+        
     }//GEN-LAST:event_jMenu1MouseClicked
 
     private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
